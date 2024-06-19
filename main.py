@@ -53,6 +53,7 @@ async def analysingVideo(link: Link):
         try:
             lista_comentarios = request.execute()
         except Exception as e:
+            print(e)
             return { "error": e }
         
         analyser = Vaderanalise()
@@ -74,6 +75,7 @@ async def analysingVideo(link: Link):
         try:
             lista_comentarios = request.execute()
         except Exception as e:
+            print(e)
             return { "error": e }
 
         analise = Leiaanalise()
